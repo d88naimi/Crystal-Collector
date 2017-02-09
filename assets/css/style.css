@@ -1,0 +1,43 @@
+
+
+body {
+	
+/*	background-image: url("../images/background.jpg");
+*/}
+#index h1 {
+	color: blue;
+}
+
+.logo {
+	width: 200px;
+	height:200px;
+}
+
+p {
+	color: blue;
+	font-size: 25px;
+}
+
+
+#p-body{
+	text-align: center;
+}
+
+.jumbotron {
+	background-color: #666666;
+	 color: blue;
+}
+
+#footer_container {
+	bottom: 0;
+	right:0;
+	left:0;
+	
+	text-align: center;
+	
+	 position: fixed;
+	 
+	}
+
+
+body { color: black; }
