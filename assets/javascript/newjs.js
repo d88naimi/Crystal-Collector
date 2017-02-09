@@ -32,23 +32,22 @@ var game = {
  	// function using conditions to state game when won or loss if userscore < randomNumber 
  	// 
  	updateScore: function(value){ 
- 		if( this.userScore < this.randomNumber) 
-
- 		{
+ 		if( this.userScore < this.randomNumber) {
+			
 			this.userScore = this.userScore + value;
 
  		};
 
  		if (this.userScore === this.randomNumber) { 
  			this.wins++;
- 			$("#wins").html("wins"  + this.wins);
+ 			$("#wins").html("Wins : "  + this.wins);
  			this.resetGame();
 
  		}
 
  		else if	( this.userScore > this.randomNumber) {
  			this.losses++;
- 			$("#losses").html("losses" + this.losses);
+ 			$("#losses").html("Losses : " + this.losses);
  			this.resetGame();
 
  		};

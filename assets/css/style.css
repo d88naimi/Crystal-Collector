@@ -2,10 +2,10 @@
 
 body {
 	
-/*	background-image: url("../images/background.jpg");
-*/}
+	background-image: url("../images/background.jpg");
+}
 #index h1 {
-	color: blue;
+	color: white;
 }
 
 .logo {
