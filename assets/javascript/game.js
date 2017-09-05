@@ -14,8 +14,11 @@ var game = {
 // function to start the game. Random # assighned, wins set to 0 losses set 0 user score is set to 0 jewels assighned random numbers	
 	randomGenerate: function(min, max) { 
 		return Math.floor(Math.random() * (max - min) + min);
+		
 	},
+	
 
+	// here we make the begin function that generates random numbers for all the jewels 
 	beginGame: function() {
 		this.randomNumber = this.randomGenerate(19, 120);
 		this.jewel1 = this.randomGenerate(1, 12);
@@ -31,7 +34,7 @@ var game = {
  	},
  	 
  	// function using conditions to state game when won or loss if userscore < randomNumber 
- 	// 
+ 	
  	updateScore: function(value){ 
  		if( this.userScore < this.randomNumber) {
 			
@@ -52,11 +55,11 @@ var game = {
  			this.resetGame();
 
  		};
-
+		 
  	},
-
+	
  };
-
+ console.log("hello");
 // events begin here 
 
 // when i click jewel1 update user score jewel1 value 
@@ -86,12 +89,3 @@ var game = {
 
 		
 		});
-
-
-
-
-
-
-// 
-
- 
