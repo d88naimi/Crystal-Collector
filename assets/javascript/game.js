@@ -11,14 +11,14 @@ var game = {
 	randomNumber: 0,	
 
 // function to generate a random number. Will be used 5 times jewels 4 and 1 random  
-// function to start the game. Random # assighned, wins set to 0 losses set 0 user score is set to 0 jewels assighned random numbers	
+// function to start the game. Random # assigned, wins set to 0 losses set 0 user score is set to 0 jewels assigned random numbers	
 	randomGenerate: function(min, max) { 
 		return Math.floor(Math.random() * (max - min) + min);
 		
 	},
 	
 
-	// here we make the begin function that generates random numbers for all the jewels 
+	// Here we are asisighning random numbers to each jewel
 	beginGame: function() {
 		this.randomNumber = this.randomGenerate(19, 120);
 		this.jewel1 = this.randomGenerate(1, 12);
@@ -36,22 +36,28 @@ var game = {
  	// function using conditions to state game when won or loss if userscore < randomNumber 
  	
  	updateScore: function(value){ 
+		 // if userScore is less than random generated number 
  		if( this.userScore < this.randomNumber) {
-			
+			// continue adding  to the user score value
 			this.userScore = this.userScore + value;
 
  		};
-
+		 // if user score === the random number guessed 
  		if (this.userScore === this.randomNumber) { 
- 			this.wins++;
+			 // increment the wins
+			 this.wins++;
+			 // show the win to the html bia jquery
  			$("#wins").html("Wins : "  + this.wins);
  			this.resetGame();
 
  		}
-
+		 // if userscore is higher than the random generated number then 
  		else if	( this.userScore > this.randomNumber) {
- 			this.losses++;
- 			$("#losses").html("Losses : " + this.losses);
+			 // incremnet losses
+			 this.losses++;
+			 // display the losses to the client
+			 $("#losses").html("Losses : " + this.losses);
+			 // reset the number to play agin
  			this.resetGame();
 
  		};
@@ -63,10 +69,13 @@ var game = {
 // events begin here 
 
 // when i click jewel1 update user score jewel1 value 
-
+// call the begin game function to begin
 		game.beginGame();
+		// if jewel one is clicked do this 
 		$("#jewel1").on("click", function(){
+			//update the score and jewel count
 			game.updateScore(game.jewel1);
+			// show the updated score to the client
 			$("#scoretext").html( "Your Number:" + game.userScore);
 
 		
