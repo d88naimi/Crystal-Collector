@@ -1,93 +1,102 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<title>Crystal Game</title>
-	
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-	 <!-- Added link to the jQuery Library -->
-    <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
-    <!-- Added a link to Bootstrap-->
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-	
-	
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<!-- Added link to the jQuery Library -->
+	<script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+	<!-- Added a link to Bootstrap-->
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+		integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 </head>
 
 <body id="index">
 
-
-    	<h1 class="text-center">Crystal Collector</h1>
-    </div>	
-    
-		<!-- Rules -->
-
-	<div  class ="container-fluid" id="p-body"> 
-
-		
-		<p>
+	<div class="panel panel-default text-center">
+		<div class="panel-heading"></div>
+		<h1 class="panel-title"> Crystal Collector</h1>
+		<div class="panel-body">
 			You will be given a Random number at the begining of the Game </br>
 
-			There are four crystrals below. By clicking on a crystal you will add a specific amount of points to your total score. </br>
+			There are four crystrals below. By clicking on a crystal you will add a specific amount of points to your
+			total score. </br>
 
-			You win the game by matching your total score to a random number, you lose the game if your total score goes above the random number. </br>
+			You win the game by matching your total score to a random number, you lose the game if your total score goes
+			above the random number. </br>
 
 			The value of each crystal is hidden from you until you click on it.
 
 			Each time when the game starts, the game will change the values of each crystal.
 
 			Good Luck
-		</p>
-	</div>
-
-	<div class="container-fluid">
-			<h1 id= "white"> Random Number Generate: 
-			<div id="scoreNumber"> </div>
-			</h1>
-			
-			<!-- Result Panel -->
-        <div class="col-lg-12">
-        <div id="scorecont" class="contdiv">
-		<div id="score" class="inline"></div>
-		<div id="winlose" class="inline">
-			
-			
-	</div>
-		<!-- div id for all the jewels and link to images  -->
-		<div id="jewel">
-			
-			<img class="jewel logo" id="jewel1"  src="assets/images/bubble.jpg">
-			<img class="jewel logo" id="jewel2"  src="assets/images/c1.png">
-			<img class="jewel logo" id="jewel3"  src="assets/images/d1.jpg">
-			<img class="jewel logo" id="jewel4" src="assets/images/r1.jpg">
 		</div>
-			
-		<h1 id= "white">
-			<div class="textbox1">
-				<span id="wins">Wins:</span>
-			</div>
-			
-			<div class="textbox2">	
-			<span id="losses">Losses:</span>
-			</div>
-		
-		<div id="scoretext" class="contdiv">Your Number:</div>
-		
-		</h1>
-                    
-
 	</div>
 
-	<div class="container-fluid" id="footer_container">
-		<div class="row">
-		<div class="col-xs-12"> &copy Copyright 2017 David Naimi
-
+	<div class="panel panel-default text-center">
+		<div class="panel-heading">
+			<h3 class="panel-title "> Random Number Generate:</h3>
+		</div>
+		<div class="panel-body">
+			<h2 id="scoreNumber">
+			</h2>
+		</div>
 	</div>
+
+	<div class="panel panel-default text-center">
+		<div class="panel-heading">
+			<h3 class="panel-title"> Choose Crystals</h3>
+		</div>
+		<div class="panel-body">
+			<div id="scorecont" class="contdiv">
+				<div id="score" class="inline"></div>
+				<div id="winlose" class="inline">
+
+
+				</div>
+				<!-- div id for all the jewels and link to images  -->
+				<div id="jewel">
+
+					<img class="jewel logo crystal" id="jewel1" src="assets/images/bubble.jpg">
+					<img class="jewel logo crystal" id="jewel2" src="assets/images/c1.png">
+					<img class="jewel logo crystal" id="jewel3" src="assets/images/d1.jpg">
+					<img class="jewel logo crystal" id="jewel4" src="assets/images/r1.jpg">
+				</div>
+
+				<h1 id="white">
+					<div class="textbox1">
+						<span id="wins">Wins:</span>
+					</div>
+
+					<div class="textbox2">
+						<span id="losses">Losses:</span>
+					</div>
+
+					<div id="scoretext" class="contdiv">Your Number:</div>
+
+				</h1>
+
+
+			</div>
+
+		</div>
+	</div>
+
+	<footer class="text-center">
+		<p>&copy Copyright 2017 David Naimi</p>
+	</footer>
+
+
 	<!-- link tag to jquery -->
 	<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
 	<!-- link to js file  -->
-	<script type="text/javascript" src="assets/javascript/game.js" ></script>
+	<script type="text/javascript" src="assets/javascript/game.js"></script>
 </body>
 
 </html>

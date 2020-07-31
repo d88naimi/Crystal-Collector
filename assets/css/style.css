@@ -1,43 +1,39 @@
-
-
 body {
-	
-	background-image: url("../images/background.jpg");
+  background-color: #666666;
+  color: black;
 }
 #index h1 {
-	color: white;
+  font-size: 6rem;
 }
 
 .logo {
-	width: 200px;
-	height:200px;
+  width: 200px;
+  height: 200px;
 }
 
 p {
-	color: blue;
-	font-size: 25px;
+  font-size: 25px;
 }
 
-
-#p-body{
-	text-align: center;
+#p-body {
+  text-align: center;
 }
 
-.jumbotron {
-	background-color: #666666;
-	 color: blue;
+.crystal {
+  width: 100px;
+  height: 100px;
+  transform: rotate(0);
+  display: inline-block;
+  margin: 40px;
+  cursor: pointer;
 }
 
-#footer_container {
-	bottom: 0;
-	right:0;
-	left:0;
-	
-	text-align: center;
-	
-	 position: fixed;
-	 
-	}
+.crystal:hover {
+  transform: rotate(180deg) scale(1.2);
+  transition: 0.5s all;
+}
 
-
-body { color: black; }
+.crystal:active {
+  transform: rotate(180deg) scale(1);
+  transition: 0.2s all;
+}
